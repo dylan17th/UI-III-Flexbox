@@ -90,4 +90,23 @@ h1, h2, h3, h4, h5 {
     margin: auto 7%;
 }
 
+/*this is the service section of the document*/
+
+.services h1{
+    font-size: 40px;
+    margin:1% 7%;
+}
+.services p{
+    font-size: 17px;
+    margin:3% 7%;
+    line-height:150% ;
+}
+/*This is the selector for the bottome border of the top content*/
+
+.top-content{
+    border-bottom: black 2px solid;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+}
 
