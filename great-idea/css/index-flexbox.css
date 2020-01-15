@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5 {
     color:grey;   
 }
 .item:hover{
-    color:lightslategray;
+    color:black;
 }
 /*this is the style for the big picture under the nav bar*/
 
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5 {
     width: 44%;
 }
 li{
-    
+
 }
 /*This is for the copyright div*/
 

@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -62,140 +63,123 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-*{
-	width: width 100%;
-	margin:0px;
-	padding:0px;
-}
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+
 /*starting from the top of the page and working my way down*/
-/*starting from the top of the page and working my way down*/
-body{
-   margin: 20px;
-}
+
 /*this is the start of the nav bar styles*/
-.navbar{
-  margin:20px; 
-}
-.header{
-  position:absolute; 
-  top:0px;
-  left:8%;
-  
+.navcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1%;
+    max-width: 100%;
 }
 
-.navbar{
-  position:fixed;
-  background-color:darkgrey;
-  padding:10px;
-  border-radius: 10px;
-  z-index: 10;
-}
-.navbar a{
-  color: lightgrey; 
+.box{
+  justify-content: center;
+  vertical-align: text-bottom;
+  padding:2%;
   text-decoration: none;
-  text-align: center;
-  padding:25px;
-  margin:25px;
-  
+  color:grey;   
 }
-
-.navbar a:hover{
+.box:hover{
   color:black;
-}
 
-nav{
-  display:inline;
 }
-/*this is the start of the top section styles*/
 h1{
-  font-size: 100px;
-  margin:150px auto 50px 250px;	
-  text-align: center;
-  position: relative;
-  left:-30%;
+	font-size: 100px;
+	margin:150px auto 50px 250px;	
+	text-align: center;
+	position: relative;
+	left:-30%;
 }
 
 .button{
-  border: black solid 2px;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px 20px;
-  max-width: 250px;
-  margin: auto auto auto 240px;
-  position: relative;
+	border: black solid 2px;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px 20px;
+	max-width: 250px;
+	margin: auto auto auto 270px;
+	position: relative;
 }
 
 .button:hover{
-  background-color:lightgrey;
+	background-color:lightgrey;
 }
 
 .topsection{
-  border-bottom: black 2px solid;
-  margin-left:2% ;
-  margin-right: 5%;
-  margin-bottom: 50px;
-  padding-bottom: 150px;
+	border-bottom: black 2px solid;
+	margin-left:2% ;
+	margin-right: 2%;
+	margin-bottom: 50px;
+	padding-bottom: 150px;
+	position: relative;
 }
 /*this is the big circle photo style*/
 .mid{
-  display: inline-block;
-  position: absolute;
-  top: 175px;
-  right:8%;
-  width: 500px;
-  height:500px;
+	display: inline-block;
+	position: absolute;
+	top:20px;
+	right:6%;
+	width: 500px;
+	height:500px;
 }
 
 /*this is the start of the main content section. these styles are for the 5 sections elements and the big photo*/
 /*styling for the top two sections about the photo*/
 .maincontent .features, .about{
-  max-width: 45%;
-  display: inline-block; 
-  position: relative;
-  left:5%;
-  padding: 7%;
+	max-width: 45%;
+	display: inline-block; 
+	position: relative;
+	left:4%;
+  padding: 4%;
+  line-height: 170%;
 }
 /*this is the big photo in between the sections*/
-.middle-img{
-   display:block;
-   position:relative;
-   width: 90%;
-   left:5%;
+ .middle-img{
+	 display:block;
+	 position:relative;
+	 width: 90%;
+	 left:5%;
 
-}
+ }
 /*this is styling for the bottom three section below the big photo*/
-.services, .product , .vision{
-   display:inline-block;
-   position: relative; 
-   max-width: 33%;
-   padding:5%;
-   margin-top: 40px;
+ .services, .product , .vision{
+	 display:inline-block;
+	 position: relative; 
+	 max-width: 33%;
+	 padding:5%;
+	 margin-top: 40px;
    margin-bottom: 20px;
-}
+   line-height: 170%;
+ }
 
-.maincontent{
-   border-bottom: black 2px solid;
-   margin: 20px;
-  margin-right:6%;
-}
-/*this is the start of the styling for the footer element*/
-#line{
-   line-height: 40px; 
-}
+ .maincontent{
+	 border-bottom: black 2px solid;
+	 margin: 20px;
+	margin-right:2%;
+ }
+ /*this is the start of the styling for the footer element*/
+ #line{
+	 line-height: 40px; 
+ }
 
-#copy{
-   position: relative;
-   left:33%;	
-   padding-bottom: 150px;
-}
+ #copy{
+	 position: relative;
+	 left:36%;	
+	 padding-bottom: 5%;
+ }
 
 .footer{
-  position: relative ;
-  left: 60px;
-  top: 30px;
+	position: relative ;
+	left: 60px;
+	top: 30px;
 }
 /*this was top give space between the copy right and the botttom of the page*/
 .footer h4{
-  padding:25px;
+	padding:25px;
 }
+
