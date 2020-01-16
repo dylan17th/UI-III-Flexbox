@@ -55,7 +55,8 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    overflow-x: hidden;
+	overflow-x: hidden;
+	margin:1%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5 {
     margin: 1%;
     max-width: 100%;
 }
-
+/*these are the nav items in the top flex container*/
 .box{
   justify-content: center;
   vertical-align: text-bottom;
@@ -84,106 +85,93 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   color:grey;   
 }
+/*this is for the nav items to change color when you hover over top of them */
 .box:hover{
   color:black;
 
 }
-
+/*this fades the logo button in the nav bar. I did this because iI made this a clickable item on the nav bar*/
 .box10:hover{
   opacity: 0.4;
 }
+
 h1{
 	font-size: 100px;
-	margin:150px auto 50px 250px;	
 	text-align: center;
-	position: relative;
-	left:-30%;
-}
 
+}
+.main-title{
+	display:flex;
+	justify-content: space-evenly;
+	border-bottom: black 2px solid;
+	padding-bottom: 8vh;
+	padding-top: 5vh;
+	align-items: center;
+	align-content: center;
+}
 .button{
 	border: black solid 2px;
 	font-size: 30px;
 	text-align: center;
-	padding: 10px 20px;
-	max-width: 250px;
-	margin: auto auto auto 270px;
-	position: relative;
+	width:260px;
+	margin-left: 7.5vh;
+	padding:1vh;
+	margin-top: 2vh;
 }
 
 .button:hover{
 	background-color:lightgrey;
 }
 
-.topsection{
-	border-bottom: black 2px solid;
-	margin-left:2% ;
-	margin-right: 2%;
-	margin-bottom: 50px;
-	padding-bottom: 150px;
-	position: relative;
-}
+
 /*this is the big circle photo style*/
 .mid{
-	display: inline-block;
-	position: absolute;
-	top:20px;
-	right:6%;
 	width: 500px;
 	height:500px;
 }
 
 /*this is the start of the main content section. these styles are for the 5 sections elements and the big photo*/
 /*styling for the top two sections about the photo*/
-.maincontent .features, .about{
-	max-width: 45%;
-	display: inline-block; 
-	position: relative;
-	left:4%;
-  padding: 4%;
-  line-height: 170%;
+.maincontent {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding:5vh;
+	line-height: 150%;
+	align-items: center;	
+	border-bottom: solid black 2px;
 }
-/*this is the big photo in between the sections*/
- .middle-img{
-	 display:block;
-	 position:relative;
-	 width: 90%;
-	 left:5%;
+/*this is the default selector for all three, but controls the width for only the top two sections*/
+.boxes{
+	width:50%;
+	padding: 3vh;
+}
+/*this controls the images width making the entire width of the page*/
+.middle-img{
+	width:160vh;
+}
+/* this controls the bottom boxes width*/
+.services, .product, .vision{
+	width: 33%;
+}
 
- }
-/*this is styling for the bottom three section below the big photo*/
- .services, .product , .vision{
-	 display:inline-block;
-	 position: relative; 
-	 max-width: 33%;
-	 padding:5%;
-	 margin-top: 40px;
-   margin-bottom: 20px;
-   line-height: 170%;
- }
-
- .maincontent{
-	 border-bottom: black 2px solid;
-	 margin: 20px;
-	margin-right:2%;
- }
  /*this is the start of the styling for the footer element*/
- #line{
-	 line-height: 40px; 
- }
 
- #copy{
-	 position: relative;
-	 left:36%;	
-	 padding-bottom: 5%;
- }
-
-.footer{
-	position: relative ;
-	left: 60px;
-	top: 30px;
-}
-/*this was top give space between the copy right and the botttom of the page*/
-.footer h4{
-	padding:25px;
+ .footer{
+margin-top: 5vh;
+margin-left: 8vh;
 }
 
+address{
+	line-height: 130%;
+}
+
+.phone, .copy{
+	line-height: 170%;
+}
+.copy{
+	text-align: center;
+	padding-bottom: 10vh;
+	padding-top: 5vh;
+	margin-right: 8vh;
+}
