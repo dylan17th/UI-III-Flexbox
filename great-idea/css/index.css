@@ -55,6 +55,8 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+	overflow-x: hidden;
+	margin: 1%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +65,111 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+/*starting from the top of the page and working my way down*/
+
+/*this is the start of the nav bar styles*/
+.navcontainer{
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+	
+}
+/*these are the nav items in the top flex container*/
+.box{
+  justify-content: center;
+  padding: 2%;
+  text-decoration: none;
+  color:grey;   
+}
+/*this is for the nav items to change color when you hover over top of them */
+.box:hover{
+  color:black;
+
+}
+/*this fades the logo button in the nav bar. I did this because iI made this a clickable item on the nav bar*/
+.box10:hover{
+  opacity: 0.4;
+}
+
+h1{
+	font-size: 100px;
+	text-align: center;
+
+}
+.main-title{
+	display:flex;
+	justify-content: space-evenly;
+	border-bottom: black 2px solid;
+	padding-bottom: 8vh;
+	padding-top: 5vh;
+	align-items: center;
+	align-content: center;
+}
+.button{
+	border: black solid 2px;
+	font-size: 30px;
+	text-align: center;
+	width:260px;
+	margin-left: 7.5vh;
+	padding:1vh;
+	margin-top: 2vh;
+}
+
+.button:hover{
+	background-color:lightgrey;
+}
+
+
+/*this is the big circle photo style*/
+.mid{
+	width: 500px;
+	height:500px;
+}
+
+/*this is the start of the main content section. these styles are for the 5 sections elements and the big photo*/
+/*styling for the top two sections about the photo*/
+.maincontent {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding:5vh;
+	line-height: 150%;
+	align-items: center;	
+	border-bottom: solid black 2px;
+}
+/*this is the default selector for all three, but controls the width for only the top two sections*/
+.boxes{
+	width:50%;
+	padding: 3vh;
+}
+/*this controls the images width making the entire width of the page*/
+.middle-img{
+	width:160vh;
+}
+/* this controls the bottom boxes width*/
+.services, .product, .vision{
+	width: 33%;
+}
+
+ /*this is the start of the styling for the footer element*/
+
+ .footer{
+margin-top: 5vh;
+margin-left: 8vh;
+}
+
+address{
+	line-height: 130%;
+}
+
+.phone, .copy{
+	line-height: 170%;
+}
+.copy{
+	text-align: center;
+	padding-bottom: 10vh;
+	padding-top: 5vh;
+	margin-right: 8vh;
+}
