@@ -147,30 +147,41 @@ h1, h2, h3, h4, h5 {
 }
 /*This is the start of the footer styling*/
 
-.bottompart{
-    width: 40%;
-    margin: 5%;
-    line-height: 200%;
-    font-size: 20px;
-    display:inline-block;
-    margin-top: -500px;
+.footer{
+    display:flex;
+    justify-content: space-evenly;
 }
 
-.bottompart h2{
-    font-size: 30px;
+.boxer{
+    width:40%;
+    padding:4vh;
 }
 
+/*this was used to center the picture, I achieved this by also making them item a container*/
+.imagess{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+/*this selects the paragraph and list next to the picture in the footer*/
+.some{
+    line-height: 170%;
+    font-size: 18px;
+}
+/*this was used to make the picture the entire length of the container*/
 .services-info-img{
-    display: inline-block;
-    width: 44%;
+    width:100%;
 }
-ul{
-    list-style-type: square;
-    margin-left: 4%;
-}
-/*This is for the copyright div*/
+/*this selects the copyright at the bottom of the page*/
 
 .copy{
     text-align: center;
-    padding:5%;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+}
+
+.some ul li{
+    list-style-type: square;
+    margin-left: 3vh;
+    margin-top: 1vh;
 }
