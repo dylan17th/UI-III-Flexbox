@@ -164,8 +164,9 @@ h1, h2, h3, h4, h5 {
     display: inline-block;
     width: 44%;
 }
-li{
-
+ul{
+    list-style-type: square;
+    margin-left: 4%;
 }
 /*This is for the copyright div*/
 
